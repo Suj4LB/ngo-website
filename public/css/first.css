@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+
+/* Common styling starts */
+
+:root {
+    --themered: #e43a47;
+    --gray: #efefef;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.fullcontainer {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+/* Common styling ends here */
+
+/* home styling starts */
+
+header {
+    width: 100%;
+    background-color: rgba(93, 153, 146, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 75px;
+}
+
+header .container .logo img {
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themered);
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li a:hover{
+    background-color: rgba(93, 153, 146, 0.6);
+}
+
+ul li:hover ul.dropdown{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: rgba(93, 153, 146, 0.6);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../Images/vectorised.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 402rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    background-color: #758e95;
+    display: inline-block;
+    line-height: 3.5 rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+/* Home styling ends here */
+
+.sectionTitle {
+    width: 300px;
+    border-bottom: 3px solid #d52828a4;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #83d6b9df;
+}
+
+
+.sectionTitle::after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themered);
+    position: absolute;
+    Left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section {
+    padding: 50px 0;
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+}
+
+/* common style ends here */
+
+/* home styling starts */
+
+
+#about1 {
+    color: #d8cccc;
+}
+
+.shiftright {
+    margin-left: 4%;
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: rgb(244, 239, 237);
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+/* image slider animation from chatgpt */
+
+
+.slider {
+    width: 75%;
+    overflow: hidden;
+    margin-left: 225px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.slide {
+    width: 80%;
+    height: 450px;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 150%;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide.active {
+    animation: slideAnimation 3s ease-in-out;
+}
+
+
+/* Animation ends here */
+
+
+/* coloring the elements in the list */
+
+.workareas {
+    color: #80bad1;
+    font-weight: 70%;
+}
+
+.workarealist {
+    color: #3fe95b;
+}
+
+.about_us {
+    color: #edf76de5;
+}
+
+
+/* Adding different colors in different sections */
+
+#aboutSection {
+    background-color: rgb(35, 86, 101);
+}
+
+#workareas {
+    background-color: #1a1937e3;
+}
+
+#ourefforts {
+    background-color: #4f2b71df;
+}
+
+
+/* Scroll animation starts*/
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Scroll animation ends*/
+
+
+/* footer part starts */
+
+.footer{
+    background-color: rgb(169, 211, 211);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a :hover{
+    opacity: 1;
+}
+
+
+/* footer part ends */
+
+
+
+
+/* Progress bar animation starts*/
+
+.progress-bar {
+    position: fixed;
+    width: 100%;
+    height: 1vh;
+    z-index: 5;
+}
+
+.filled {
+    width: 0;
+    height: 45%;
+    /* background-image: linear-gradient(to right, blue, yellow); */
+    background-image: linear-gradient(to right, violet,blue);
+}
+
+/* Progress bar animation ends */
+
+
+/* Back to top button part starts */
+
+
+    #progress{
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0 ,0.2);
+        cursor: pointer;
+    }
+
+    #progress-value{
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: #000;
+    }
+
+/* Back to top button part ends */
+
+
+
+
+/* Making the website responsive */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        font-size: 4px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        height: 65px;
+        margin-top: 2px;
+    }
+
+    header nav ul li a:hover {
+        background-color: var(--themered);
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li ul.dropdown li{
+        display: block;
+    }
+    
+    ul li a:hover{
+        background-color: rgba(93, 153, 146, 0.6);
+    }
+    
+    ul li:hover ul.dropdown{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    ul li ul.dropdown{
+        width: 100%;
+        background-color: rgba(93, 153, 146, 0.6);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+    .banner {
+        min-height: 100vh;
+        width: 106%;
+        background-image: url(../Images/vectorised.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .logo img{
+        width: 65px;
+    }
+
+    .container p{
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        margin-top: 65px;
+        margin-bottom: 160px;
+        margin-left: 2px;
+        color: #ffffff;
+    }
+
+    .slider {
+        width: 75%;
+        overflow: hidden;
+        margin-left: 0px;
+    }
+
+    body {
+        background-color: #3a4f6a;
+        display: grid;
+    }
+    
+    #aboutSection {
+        background-color: #3a4f6a;
+        width: 106%;
+    }
+    
+    #workareas {
+        background-color: #3a4f6a;
+        width: 106%;
+    }
+    
+    #ourefforts {
+        background-color: #3a4f6a;
+        width: 106%;
+    }
+
+    .workareas,
+    .aboutlist {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1150px){
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        min-height: 100vh;
+        width: 106%;
+        background-image: url(../Images/vectorised.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .logo img{
+        width: 95px;
+    }
+
+    .workareas {
+        color: #80bad1;
+        font-weight: 70%;
+    }
+
+    nav {
+        height: 65px;
+        margin-top: 2px;
+    }
+
+    header nav ul li a:hover {
+        background-color: var(--themered);
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li ul.dropdown li{
+        display: block;
+    }
+    
+    ul li a:hover{
+        background-color: rgba(93, 153, 146, 0.6);
+    }
+    
+    ul li:hover ul.dropdown{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    ul li ul.dropdown{
+        width: 100%;
+        background-color: rgba(93, 153, 146, 0.6);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    
+    .workarealist {
+        color: #3fe95b;
+    }
+    
+    .about_us {
+        color: #edf76de5;
+    }
+    
+    li{
+        font-size: 14px;
+    }
+
+    .container p{
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        margin-top: 65px;
+        margin-bottom: 160px;
+        margin-left: 2px;
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #aboutSection {
+        background-color: #3a4f6a;
+        width: 106%;
+    }
+
+    #workareas {
+        width: 106%;
+    }
+    
+    #ourefforts {
+        width: 106%;
+    }
+
+} 
+
+  
