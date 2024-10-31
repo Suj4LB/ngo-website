@@ -22,9 +22,8 @@ git clone <repository-url>
 ```bash
 cd <project-directory>
 ```
-3. Start the Application
 
-4. Run the following command to start the application:
+3. Run the following command to start the application:
 
 ```bash
 nodemon index.js
