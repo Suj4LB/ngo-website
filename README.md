@@ -1,12 +1,13 @@
-Project Setup Instructions
+# Project Setup Instructions
+
 Thank you for checking out this project! Here’s a simple guide to get the website up and running on your local machine.
 
-Prerequisites
-Make sure you have Node.js installed. You'll also need Nodemon, which you can install with the following command:
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed. You'll also need [Nodemon](https://www.npmjs.com/package/nodemon), which you can install with the following command:
 
-bash
-Copy code
+```bash
 npm install -g nodemon
+
 Running the Project
 Clone the Repository
 
@@ -30,4 +31,5 @@ nodemon index.js
 Note on MongoDB Atlas Cluster
 The MongoDB Atlas connection for this project is currently not functional. Any assistance in debugging or resolving this would be highly appreciated!
 
- 
+
+When you paste this into your README file on GitHub, it will appear formatted with headings, code blocks, and sections just like I showed. Replace `<repository-url>` and `<project-directory>` with the appropriate values for your project.
