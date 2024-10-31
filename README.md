@@ -8,23 +8,23 @@ Make sure you have [Node.js](https://nodejs.org/) installed. You'll also need [N
 ```bash
 npm install -g nodemon
 
-Running the Project
-Clone the Repository
 ```
-First, clone the repository to your local machine:
+# Running the Project
+
+1. First, clone the repository to your local machine:
 
 ```bash
 
 git clone <repository-url>
 ```
-Navigate to the Project Directory
+2. Navigate to the Project Directory
 
 ```bash
 cd <project-directory>
 ```
-Start the Application
+3. Start the Application
 
-Run the following command to start the application:
+4. Run the following command to start the application:
 
 ```bash
 nodemon index.js
