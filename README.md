@@ -1,6 +1,6 @@
 # Project Setup Instructions
 
-Here’s a simple guide to get the website up and running on your local machine.
+This is a simple guide to get the website up and running on your local machine.
 
 ### Prerequisites
 Make sure you have [Node.js](https://nodejs.org/) installed. You'll also need [Nodemon](https://www.npmjs.com/package/nodemon), which you can install with the following command:
