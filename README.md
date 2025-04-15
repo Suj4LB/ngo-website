@@ -15,12 +15,12 @@ npm install -g nodemon
 
 ```bash
 
-git clone <repository-url>
+git clone https://github.com/Suj4LB/ngo-website.git
 ```
 2. Navigate to the Project Directory
 
 ```bash
-cd <project-directory>
+cd ngo-website
 ```
 
 3. Run the following command to start the application:
